@@ -12,14 +12,30 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+      <div class="d-flex justify-content-center mt-5">
+        <button type="button" class="btn btn-success generatedCard me-3">
+          Generated Random Card
+        </button>
+
+        <button type="button" class="btn btn-success reset me-2">
+          Reset Random Card 5seg
+        </button>
+
+        <h4 id="temporizador"></h4>
+      </div>
+
+      <div
+        class="card-poker shadow p-3 mb-5 bg-body-tertiary rounded mx-auto bg-light rounded mt-4"
+      >
+        <div id="type-top" class="d-flex justify-content-start"></div>
+        <div id="number">
+          <p>6</p>
+        </div>
+        <div id="type-bottom" class="d-flex justify-content-end"></div>
+      </div>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
